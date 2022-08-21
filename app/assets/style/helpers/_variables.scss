@@ -67,13 +67,13 @@ $colors: (
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary:       #00cc99; // $blue !default;
+$primary:       #434952; // nav !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         $gray-100 !default;
+$light:         #F4F3EF !default;
 $dark:          $gray-900 !default;
 // scss-docs-end theme-color-variables
 
@@ -250,11 +250,14 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 $spacer: 1rem !default;
 $spacers: (
   0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
+  1: $spacer * .25,//4
+  2: $spacer * .5,//8
+  3: $spacer,//16
+  4: $spacer * 1.5,//24
+  5: $spacer * 2,//32
+  6: $spacer * 2.5,//40
+  7: $spacer * 3,//48
+  8: $spacer * 4,//68
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
