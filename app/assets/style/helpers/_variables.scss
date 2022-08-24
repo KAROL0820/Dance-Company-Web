@@ -70,7 +70,7 @@ $colors: (
 $primary:       #434952; // nav !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
-$info:          $cyan !default;
+$info:          #8792A1 !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         #F4F3EF !default;
@@ -222,7 +222,7 @@ $enable-reduced-motion:       true !default;
 $enable-smooth-scroll:        true !default;
 $enable-grid-classes:         true !default;
 $enable-button-pointers:      true !default;
-$enable-rfs:                  true !default;
+$enable-rfs:                  false !default;
 $enable-validation-icons:     true !default;
 $enable-negative-margins:     false !default;
 $enable-deprecation-messages: true !default;
@@ -257,7 +257,14 @@ $spacers: (
   5: $spacer * 2,//32
   6: $spacer * 2.5,//40
   7: $spacer * 3,//48
-  8: $spacer * 4,//68
+  8: $spacer * 3.5,//56
+  9: $spacer * 4,//68
+  10: $spacer * 5,//80
+  
+  11: $spacer * 8,//128
+  12: $spacer * 4.25,//72
+  13: $spacer * 1.25,//20
+  14: $spacer * 1.75,//28
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -270,8 +277,10 @@ $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) 
 // scss-docs-start position-map
 $position-values: (
   0: 0,
+  
   50: 50%,
-  100: 100%
+  100: 100%,
+  auto:auto
 ) !default;
 // scss-docs-end position-map
 
@@ -419,7 +428,7 @@ $aspect-ratios: (
 
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif:      'Noto Sans TC',system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 // stylelint-enable value-keyword-case
 $font-family-base:            var(--#{$variable-prefix}font-sans-serif) !default;

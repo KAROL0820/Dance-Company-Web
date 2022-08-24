@@ -1,0 +1,59 @@
+.icon{
+    vertical-align: middle;
+}
+//圖片基本設定
+.bg-cover{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.object-fit-cover{
+    object-fit: cover;
+}
+//文字
+.fz-38-50{
+    font-size: 38px;
+    @include pad{
+        font-size: 50px;
+    }
+}
+.fz-28{
+    font-size: 28px;
+}
+.fz-22{
+    font-style: 22px;
+}
+.fz-38{
+    font-size: 38px;
+}
+.fz-28-38{
+    font-size: 28px;
+    @include pad{
+        font-size: 38px;
+    }
+}
+//灰色box
+.deco-box{
+    width: 230px;
+    height:534px;
+    background-color: $primary;
+    @include pad{
+        width: 230px;
+        height:534px;
+    }
+    @include desk{
+        width: 280px;
+        height: 681px;
+    }
+    @include lg-desk{
+        width: 290px;
+        height: 791px;
+    }
+    @include big{
+        width: 306px;
+        height: 901px;
+    }
+}
+.rounded-4{
+    border-radius: 8px;
+}

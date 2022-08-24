@@ -6,16 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><%- title %></title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Squada+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp|Material+Icons+Two+Tone" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./assets/style/all.css">
+  
   </head>
 
   <body>
-    
-    
+    <nav class="navbar text-light  fixed-top align-items-center bg-zero">
+      <div class=" container ">
+        <h1 ><a class=" text-light " href="#">TDC</a></h1>
+        <div class="d-none d-md-block d-md-flex">
+            <a href="#" class="navbar-link ps-8">ABOUT US</a>
+            <a href="#" class="navbar-link ps-8">WHAT'S ON</a>
+            <a href="#" class="navbar-link ps-8">AUDUTION</a>
+          </div>
+
+        <a href="" class=" link-light d-md-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"><span class="material-symbols-outlined">menu</span></a>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-primary" id="offcanvasNavbarLabel">TDC</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="manu-link active" aria-current="page" href="./index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="manu-link" href="#">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="manu-link" href="#">WHAT'S ON</a>
+              </li>
+              <li class="nav-item">
+                <a class="manu-link" href="#">CLASS &WORKSHOP</a>
+              </li>
+              <li class="nav-item">
+                <a class="manu-link" href="#">SUPPORT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="manu-link" href="#">MY ACCOUNT</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+    </nav>
 
     <%- contents %>
+    <footer class="bg-primary py-5">
+      <div class="container text-center">
+        <div class="text-light flex-column ">
+          <h3 class="mb-3">Contact Us</h3>
+          <div class="d-flex justify-content-center mb-3">
+            <i class="fa-brands fa-facebook fa-xl navbar-link mb-2 mt-3"></i>
+            <i class="fa-brands fa-instagram fa-xl navbar-link mb-2 mt-3 ms-3 me-3"></i>
+            <i class="fa-brands fa-whatsapp fa-xl navbar-link mb-2 mt-3"></i>
+          </div>
+          <p>Taiwan Dance Company: TDCompany@gmail.com</p>
+          <p class="mb-0">© TDC Dance Company .EST.2022</p>
+          
+        </div>
+        
 
+      </div>
+    </footer>
     
 
     <script src="./assets/js/vendors.js"></script>

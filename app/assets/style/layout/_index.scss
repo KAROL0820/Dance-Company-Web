@@ -1,5 +1,22 @@
-.index__h1 {
-  color:#00cc99;
-  font-size: 20px;
-  font-weight: 400;
+.home-back{
+    background-image: url(../images/header-1.png);
+    height: 812px;
+    @include pad {
+        height: 1080px;
+    }
+}
+.seek-pic{
+    height: 360px;
+    @include pad {
+        height: 422px;
+    }
+    @include desk{
+        height: 569px;
+    }
+    @include lg-desk{
+        height: 679px;
+    }
+    @include big{
+        height: 789px;
+    }
 }
