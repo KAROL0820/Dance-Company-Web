@@ -5,6 +5,18 @@
         height: 1080px;
     }
 }
+.about-back{
+    background-image: url("https://images.unsplash.com/photo-1483931430372-226f194be3a5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    height: 250px;
+}
+.what-on-back{
+    background-image: url("https://images.unsplash.com/photo-1508807526345-15e9b5f4eaff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1110&q=80");
+    height: 250px;
+}
+.audition-back{
+    background-image: url("https://images.unsplash.com/photo-1595089325919-83859670a462?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    height: 250px;
+}
 .seek-pic{
     height: 360px;
     @include pad {
@@ -19,4 +31,10 @@
     @include big{
         height: 789px;
     }
+}
+.h-border{
+    border-bottom: 1px solid transparent;
+}
+.h-border:hover{
+    border-bottom: 1px solid $primary;
 }

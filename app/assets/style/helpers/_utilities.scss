@@ -57,3 +57,50 @@
 .rounded-4{
     border-radius: 8px;
 }
+//
+.circle-pic-lg{
+    width: 140px;
+    height: 140px;
+    border-radius: 70px;
+    object-fit: cover;
+    overflow:hidden;
+    transform:scale(1,1);transition: all 0.5s ease-out;
+    &:hover{
+        transform:scale(1.2,1.2);
+    }
+    @include pad{
+        width: 180px;
+        height:180px;
+        border-radius: 90px;
+    }
+}
+.circle-pic-sm{
+    width: 100px;
+    height: 100px;
+    border-radius:50px;
+    object-fit: cover;
+    overflow:hidden;
+    
+    transform:scale(1,1);transition: all 0.5s ease-out;
+    &:hover{
+        transform:scale(1.2,1.2);
+    }
+    @include pad{
+        width: 140px;
+        height:140px;
+        border-radius: 70px;
+    }
+}
+.hover-pic{
+    overflow:hidden;
+    transform:scale(1,1);transition: all 0.5s ease-out;
+    &:hover{
+        transform:scale(1.1,1.1);
+    }
+}
+//line
+.line{
+    width:60px ;
+    height: 3px;
+    background-color: $danger;
+}

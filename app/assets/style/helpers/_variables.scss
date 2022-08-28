@@ -72,7 +72,7 @@ $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          #8792A1 !default;
 $warning:       $yellow !default;
-$danger:        $red !default;
+$danger:        #9A031E !default;
 $light:         #F4F3EF !default;
 $dark:          $gray-900 !default;
 // scss-docs-end theme-color-variables
@@ -428,7 +428,7 @@ $aspect-ratios: (
 
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      'Noto Sans TC',system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif:      'Outfit','Noto Sans TC',system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 // stylelint-enable value-keyword-case
 $font-family-base:            var(--#{$variable-prefix}font-sans-serif) !default;
