@@ -5,17 +5,44 @@
         height: 1080px;
     }
 }
+.youth-pic{
+    
+}
 .about-back{
     background-image: url("https://images.unsplash.com/photo-1483931430372-226f194be3a5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
     height: 250px;
 }
 .what-on-back{
     background-image: url("https://images.unsplash.com/photo-1508807526345-15e9b5f4eaff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1110&q=80");
-    height: 250px;
+    height: 80px;
+    @include pad {
+        height: 100px;
+    }
+    @include desk{
+        height: 150px;
+    }
+    @include lg-desk{
+        height: 200px;
+    }
+    @include big{
+        height: 230px;
+    }
 }
 .audition-back{
     background-image: url("https://images.unsplash.com/photo-1595089325919-83859670a462?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
-    height: 250px;
+    height: 80px;
+    @include pad {
+        height: 100px;
+    }
+    @include desk{
+        height: 150px;
+    }
+    @include lg-desk{
+        height: 200px;
+    }
+    @include big{
+        height: 230px;
+    }
 }
 .seek-pic{
     height: 360px;
