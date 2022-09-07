@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TDC web</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Squada+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp|Material+Icons+Two+Tone" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="./assets/style/all.css">
+  
+  </head>
+
+  <body>
+    <nav class="navbar text-light  fixed-top align-items-center bg-zero">
+      <div class=" container ">
+        <h1 ><a class=" text-light " href="./index.html">TDC</a></h1>
+        <div class="d-none d-md-block d-md-flex">
+            <a href="./about.html" class="navbar-link ps-8">ABOUT US</a>
+            <a href="./what's-on.html" class="navbar-link ps-8">WHAT'S ON</a>
+            <a href="./schedule.html" class="navbar-link ps-8">SCHEDULE</a>
+          </div>
+
+        <a href="" class=" link-light d-md-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"><span class="material-symbols-outlined">menu</span></a>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-primary" id="offcanvasNavbarLabel">TDC</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="manu-link active h-border" aria-current="page" href="./index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="manu-link h-border" href="./about.html">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="manu-link h-border" href="./what's-on.html">WHAT'S ON</a>
+              </li>
+              <li class="nav-item">
+                <a class="manu-link h-border" href="./schedule.html">CLASS &WORKSHOP</a>
+              </li>
+              <li class="nav-item">
+                <a class="manu-link h-border" href="#">SUPPORT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="manu-link h-border" href="./login.html">MY ACCOUNT</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    
+<header class="myaccount-back bg-cover object-fit-cover d-flex align-items-end">
+    <div class="container">
+            <div class="text-light "> 
+        </div>
+        </div>
+</header>
+<div class="container py-3 " >
+    <h2 class=" text-nowrap border-start border-danger border-8 ps-3  mt-md-5 mt-3 fw-bold fz-24 fz-lg-40 fz-md-32">ACCOUNT INFO</h2>
+    <div class="py-5 d-flex flex-column align-items-center border-bottom border-primary mb-4 border-2" >
+        <img src="https://images.unsplash.com/photo-1620122303020-87ec826cf70d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fGhlYWR8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60" class="circle-pic-sm " alt="">
+        <h2>Priscilla R.</h2>
+    </div >
+    <div class="row">
+        <div class="col-12 col-md-3 ">
+                <div class="list-group d-flex flex-row flex-md-column" id="myList" role="tablist">
+                <a class="list-group-item list-group-item-action active " data-bs-toggle="list" href="#home" role="tab">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h3 class="fz-16 mb-0 text-nowrap ">ACCOUNT INFO</h3>
+                        <i class="fa-solid fa-chevron-down icon d-md-none"></i>
+                        <i class="fa-solid fa-chevron-right icon d-none d-md-block"></i>
+                    </div></a>  
+                <a class="list-group-item list-group-item-action fz-24" data-bs-toggle="list" href="#profile" role="tab">
+                    <h3 class="fz-16 mb-0 ">MY CLASS</h3></a>
+                <a class="list-group-item list-group-item-action fz-24" data-bs-toggle="list" href="#messages" role="tab">
+                    <h3 class="fz-16 mb-0 ">HISTORY</h3></a>
+                
+            </div>
+            </div>
+            <div class=" d-none d-md-block col-md-1">
+                <div class="d-flex justify-content-center"><div class="primary-line"></div></div>
+                
+            </div>
+
+            <div class="col-12 col-md-8 ">
+        <div class="tab-content">
+        <div class="tab-pane active" id="home" role="tabpanel">
+            <div class="form-box d-flex flex-column">
+                <h2 class=" text-nowrap fz-24 fz-md-32 my-4 my-md-0 ">Edit Info<i class="fa-solid fa-pen ms-3 text-danger fa-2xs"></i></h2>
+                <form class="pb-5 ">
+                    <div class="mb-3">
+
+                        <label for="text" class="form-label mt-md-3">Account Name</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="text" placeholder="Priscilla R." disabled>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password<i class="fa-solid fa-pen ms-3 text-danger"></i></label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="*********** " >
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Confirm password<i class="fa-solid fa-pen ms-3 text-danger"></i></label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="***********" >
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email</label>
+                        <div class="input-group">
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="priscilla@gmaiill.cpm" disabled>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex justify-content-center mt-5"><a class="btn dark-btn text-center text-light fz-16 px-6"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal-save">
+                            Save
+                        </a></div>
+                    <div class="modal fade" id="exampleModal-save" tabindex="-1" aria-labelledby="exampleModalLabel-save"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title fs-3" id="exampleModalLabel">Save<i class="fa-regular fa-circle-check text-success ms-4"></i></h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="fs-5">
+                                        Has been saved !
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+    
+                </form>
+                </div>
+        </div>
+        <div class="tab-pane " id="profile" role="tabpanel">
+            <h2 class=" text-nowrap fz-24 fz-md-32 my-4 mt-md-0  ">My class<i class="fa-solid fa-user ms-3 fa-2xs icon"></i></h2>
+            <div class="border-bottom py-2 px-3 bg-light mb-3">
+                <div class="d-flex justify-content-between align-items-center ">
+                <div class="">
+                <p class="mb-2">10:30 AM – 11:30 AM PDT | MON, SEP 12</p>
+                <p class="mb-0">Inter Contemporary</p>
+                <p class="fz-14 text-info mb-0">Devin Thompson</p>
+                </div>
+                <button type="" class="border-0" id="liveToastBtn"><i class="fa-solid fa-bell hover-danger"></i></button>
+                
+                </div>
+                
+            </div>
+            <div class="border-bottom py-2 px-3 bg-light mb-3">
+                <div class="d-flex justify-content-between align-items-center ">
+                <div class="">
+                <p class="mb-2">17:30 AM – 19:00 AM PDT | WED, SEP 14</p>
+                <p class="mb-0">Adv Commercial Choreography Company Class</p>
+                <p class="fz-14 text-info mb-0">Ahtoy Juliana</p>
+                </div>
+                
+                <button type="" class="border-0" id="liveToastBtn"><i class="fa-solid fa-bell hover-danger"></i></button>
+                
+                </div>
+                
+            </div>
+            <div class="border-bottom py-2 px-3 bg-light mb-3">
+                <div class="d-flex justify-content-between align-items-center ">
+                <div class="">
+                <p class="mb-2">11:30 AM – 13:30 AM PDT | SAT, SEP 16</p>
+                <p class="mb-0">Open Stretch</p>
+                <p class="fz-14 text-info mb-0">Kassidy Robles</p>
+                </div>
+                <button type="" class="border-0" id="liveToastBtn"><i class="fa-solid fa-bell hover-danger"></i></button>
+                
+                </div>
+                
+            </div>
+            <div class="border-bottom py-2 px-3 bg-light mb-3">
+                <div class="d-flex justify-content-between align-items-center ">
+                <div class="">
+                <p class="mb-2">18:30 AM – 19:30 AM PDT | SAT, SEP 23</p>
+                <p class="mb-0">Adv Contemporary</p>
+                <p class="fz-14 text-info mb-0">Kassidy Robles</p>
+                </div>
+                <button type="" class="border-0" id="liveToastBtn"><i class="fa-solid fa-bell hover-danger"></i></button>
+                
+                </div>
+                
+            </div>
+
+        </div>
+        <div class="tab-pane" id="messages" role="tabpanel">
+            <h2 class=" text-nowrap fz-24 fz-md-32 my-4 my-md-0 ">History<i class="fa-solid fa-cart-shopping ms-3 fa-2xs icon"></i></h2>
+            <div class="px-3 my-5 bg-light py-3 rounded-4 flex-column d-flex ">
+                <p class="fz-md-20">Looks like you haven’t booked anything yet.</p>
+                <p>past bookings will be saved here for easy reference.</p> 
+                <div class="align-self-end"><a href="./schedule.html" class="btn dark-btn d-inline px-4">BOOK NOW</a></div>
+            </div>
+        </div>
+        
+      </div>
+
+    </div>
+
+
+    </div>
+    
+    
+    
+
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+      <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" >
+        <div class="toast-header">
+          
+          <strong class="me-auto">RIMINDER</strong>
+          <small>just now</small>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+          Alreadr add to your calendar , we'll remind you before the class start.
+        </div>
+      </div>
+    </div>
+
+    
+      
+
+
+</div>
+
+<script>
+    var firstTabEl = document.querySelector('#myTab a:last-child')
+    var firstTab = new bootstrap.Tab(firstTabEl)
+  
+    firstTab.show()
+    
+  </script></div>
+    <footer class="bg-primary py-5">
+      <div class="container text-center">
+        <div class="text-light flex-column ">
+          <h3 class="mb-3">Contact Us</h3>
+          <div class="d-flex justify-content-center mb-3">
+            <i class="fa-brands fa-facebook fa-xl navbar-link mb-2 mt-3"></i>
+            <i class="fa-brands fa-instagram fa-xl navbar-link mb-2 mt-3 ms-3 me-3"></i>
+            <i class="fa-brands fa-whatsapp fa-xl navbar-link mb-2 mt-3"></i>
+          </div>
+          <p>Taiwan Dance Company: TDCompany@gmail.com</p>
+          <p class="mb-0">© TDC Dance Company .EST.2022</p>
+          
+        </div>
+        
+
+      </div>
+    </footer>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>

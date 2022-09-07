@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TDC web</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Squada+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp|Material+Icons+Two+Tone" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="./assets/style/all.css">
+  
+  </head>
+
+  <body>
+    <nav class="navbar text-light  fixed-top align-items-center bg-zero">
+      <div class=" container ">
+        <h1 ><a class=" text-light " href="./index.html">TDC</a></h1>
+        <div class="d-none d-md-block d-md-flex">
+            <a href="./about.html" class="navbar-link ps-8">ABOUT US</a>
+            <a href="./what's-on.html" class="navbar-link ps-8">WHAT'S ON</a>
+            <a href="./schedule.html" class="navbar-link ps-8">SCHEDULE</a>
+          </div>
+
+        <a href="" class=" link-light d-md-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"><span class="material-symbols-outlined">menu</span></a>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-primary" id="offcanvasNavbarLabel">TDC</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="manu-link active h-border" aria-current="page" href="./index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="manu-link h-border" href="./about.html">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="manu-link h-border" href="./what's-on.html">WHAT'S ON</a>
+              </li>
+              <li class="nav-item">
+                <a class="manu-link h-border" href="./schedule.html">CLASS &WORKSHOP</a>
+              </li>
+              <li class="nav-item">
+                <a class="manu-link h-border" href="#">SUPPORT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="manu-link h-border" href="./login.html">MY ACCOUNT</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header class="schedule-back bg-cover object-fit-cover d-flex align-items-end">
+    <div class="container">
+            <div class="text-light  ">
+            
+            
+                
+        </div>
+        </div>
+</header>
+
+<section>
+    <div class="container">
+        <div class="row mb-8">
+            <h2 class=" text-nowrap border-start border-danger border-8 ps-3  mt-md-5 mt-3 fw-bold fz-24 fz-lg-40 fz-md-32" data-aos="fade-down-right">SCHEDULE</h2>
+            <div class="col mb-0">
+                <div class="bg-light py-2 px-3 d-flex justify-content-between align-items-center mt-4">
+                    <h6 class="mb-0 fz-16">CLASS / WORKSHOP</h6>
+                    <a href="./login.html" class="hover-danger"><i class="fa-solid fa-user icon"></i></a>
+                </div>
+                <div>
+                    <div class="row"data-aos="fade-up-left">
+                        <div class="d-flex justify-content-around mt-3 mb-2">
+                            <div class="text-center">S</div>
+                            <div>M</div>
+                            <div>T</div>
+                            <div>W</div>
+                            <div>T</div>
+                            <div>F</div>
+                            <div>S</div>
+                        </div>
+                        <div class="col-12  ">
+                            <div class="list-group d-flex flex-row " id="myList" role="tablist">   
+                                <a class="list-group-item list-group-item-action active text-center border-0 rounded-pill" data-bs-toggle="list" href="#eleven" role="tab">11</a>
+                                <a class="list-group-item list-group-item-action text-center border-0 rounded-pill " data-bs-toggle="list" href="#tweleve" role="tab">12</a>
+                                <a class="list-group-item list-group-item-action text-center border-0 rounded-pill" data-bs-toggle="list" href="#thirdteen" role="tab">13</a>
+                                <a class="list-group-item list-group-item-action text-center border-0 rounded-pill" data-bs-toggle="list" href="#fourteen" role="tab">14</a>
+                                <a class="list-group-item list-group-item-action text-center border-0 rounded-pill" data-bs-toggle="list" href="#fifteen" role="tab">15</a>
+                                <a class="list-group-item list-group-item-action text-center border-0 rounded-pill" data-bs-toggle="list" href="#sixteen" role="tab">16</a>
+                                <a class="list-group-item list-group-item-action text-center border-0 rounded-pill" data-bs-toggle="list" href="#seleventeen" role="tab">17</a>
+                                
+                </div>
+                            </div>
+                              </div>
+                              
+                        </div>
+                        <div class="col-12">
+                            <div class="tab-content">
+                                <div class="tab-pane active mt-3 mb-3" id="eleven" role="tabpanel">
+                                    <div class="bg-light py-2 px-3 ">
+                                        <h6 class="mb-0 fz-16" >Sunday, Septemper 11</h6>
+                                    </div>
+                                    <div class="border-bottom py-2 px-3 " >
+                                        <div class="d-flex justify-content-between align-items-center ">
+                                        <div class="">
+                                        <p class="mb-2">08:30 AM – 09:30 AM PDT</p>
+                                        <p class="mb-0">Beg Contemporary Jazz</p>
+                                        <p class="fz-14 text-info">Anne Bird</p>
+                                        </div>
+                                        <div>
+                                            <a href="./login.html" class="hover-danger">BOOK</a>
+                                        </div></div>
+                                        <a class="text-danger arrow" data-bs-toggle="collapse" href="#collapseExample"  role="button" aria-expanded="false" aria-controls="collapseExample">
+                                            View Detials<i class="fa-solid fa-chevron-down ms-3 icon down"></i>
+                                            <i class="fa-solid fa-chevron-up icon d-none up ms-3"></i>
+                                        </a>
+                                        <div class="collapse" id="collapseExample">
+                                            <div class="card card-body bg-light border-0">
+                                              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="border-bottom py-2 px-3 ">
+                                        <div class="d-flex justify-content-between align-items-center ">
+                                        <div class="">
+                                        <p class="mb-2">09:30 AM – 10:30 AM PDT</p>
+                                        <p class="mb-0">Contemporary - Int/Adv (ONLINE)</p>
+                                        <p class="fz-14 text-info">Reid T. Huffman</p>
+                                        </div>
+                                        <div>
+                                            <a href="" class="hover-danger">BOOK</a>
+                                        </div></div>
+                                        <a class="text-danger arrow-2" data-bs-toggle="collapse" href="#collapseExample-2"  role="button" aria-expanded="false" aria-controls="collapseExample">
+                                            View Detials<i class="fa-solid fa-chevron-down ms-3 icon down-2"></i>
+                                            <i class="fa-solid fa-chevron-up icon d-none up-2 ms-3"></i>
+                                        </a>
+                                        <div class="collapse" id="collapseExample-2">
+                                            <div class="card card-body bg-light border-0">
+                                              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="border-bottom py-2 px-3 ">
+                                        <div class="d-flex justify-content-between align-items-center ">
+                                        <div class="">
+                                        <p class="mb-2">12:30 AM – 14:30 AM PDT</p>
+                                        <p class="mb-0">Inter Contemporary</p>
+                                        <p class="fz-14 text-info">Devin Thompson</p>
+                                        </div>
+                                        <div>
+                                            <a href="" class="hover-danger">BOOK</a>
+                                        </div></div>
+                                        <a class="text-danger arrow-3" data-bs-toggle="collapse" href="#collapseExample-3"  role="button" aria-expanded="false" aria-controls="collapseExample">
+                                            View Detials<i class="fa-solid fa-chevron-down ms-3 icon down-3"></i>
+                                            <i class="fa-solid fa-chevron-up icon d-none up-3 ms-3"></i>
+                                        </a>
+                                        <div class="collapse" id="collapseExample-3">
+                                            <div class="card card-body bg-light border-0">
+                                              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="border-bottom py-2 px-3 ">
+                                        <div class="d-flex justify-content-between align-items-center ">
+                                        <div class="">
+                                        <p class="mb-2">12:30 AM – 14:30 AM PDT</p>
+                                        <p class="mb-0">Adv Choreography</p>
+                                        <p class="fz-14 text-info">Kassidy Robles</p>
+                                        </div>
+                                        <div>
+                                            <a href="" class="hover-danger">BOOK</a>
+                                        </div></div>
+                                        <a class="text-danger arrow-4" data-bs-toggle="collapse" href="#collapseExample-4"  role="button" aria-expanded="false" aria-controls="collapseExample">
+                                            View Detials<i class="fa-solid fa-chevron-down ms-3 icon down-4"></i>
+                                            <i class="fa-solid fa-chevron-up icon d-none up-4 ms-3"></i>
+                                        </a>
+                                        <div class="collapse" id="collapseExample-4">
+                                            <div class="card card-body bg-light border-0">
+                                              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                            </div>
+                                          </div>
+                                    </div>
+
+
+                                    </div>
+                                    <!--星期ㄧ-->
+                                <div class="tab-pane mt-3 mb-3" id="tweleve" role="tabpanel">                                    
+                                    <div class="bg-light py-2 px-3 ">
+                                    <h6 class="mb-0 fz-16" >Monday, Septemper 12</h6>
+                                </div>
+                                <div class="border-bottom py-2 px-3 ">
+                                    <div class="d-flex justify-content-between align-items-center ">
+                                    <div class="">
+                                    <p class="mb-2">17:30 AM – 19:30 AM PDT</p>
+                                    <p class="mb-0">Adv Contemporary</p>
+                                    <p class="fz-14 text-info">Anne Bird</p>
+                                    </div>
+                                    <div>
+                                        <a href="" class="hover-danger">BOOK</a>
+                                    </div></div>
+                                    <a class="text-danger arrow" data-bs-toggle="collapse" href="#collapseExample"  role="button" aria-expanded="false" aria-controls="collapseExample">
+                                        View Detials<i class="fa-solid fa-chevron-down ms-3 icon down"></i>
+                                        <i class="fa-solid fa-chevron-up icon d-none up ms-3"></i>
+                                    </a>
+                                    <div class="collapse" id="collapseExample">
+                                        <div class="card card-body bg-light border-0">
+                                          Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                        </div>
+                                      </div>
+                                </div>
+                                </div>
+                                <!--星期二-->
+                                <div class="tab-pane mt-3 mb-3" id="thirdteen" role="tabpanel">
+                                    <div class="bg-light py-2 px-3 ">
+                                        <h6 class="mb-0 fz-16" >Tuesday, Septemper 13</h6>
+                                    </div>
+                                    <div class="border-bottom py-2 px-3 ">
+                                        <div class="d-flex justify-content-between align-items-center ">
+                                        <div class="">
+                                        <p class="mb-2">12:30 AM – 14:30 AM PDT</p>
+                                        <p class="mb-0">Beg Graham</p>
+                                        <p class="fz-14 text-info">Layne Finey</p>
+                                        </div>
+                                        <div>
+                                            <a href="" class="hover-danger">BOOK</a>
+                                        </div></div>
+                                        <a class="text-danger arrow" data-bs-toggle="collapse" href="#collapseExample"  role="button" aria-expanded="false" aria-controls="collapseExample">
+                                            View Detials<i class="fa-solid fa-chevron-down ms-3 icon down"></i>
+                                            <i class="fa-solid fa-chevron-up icon d-none up ms-3"></i>
+                                        </a>
+                                        <div class="collapse" id="collapseExample">
+                                            <div class="card card-body bg-light border-0">
+                                              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="border-bottom py-2 px-3 ">
+                                        <div class="d-flex justify-content-between align-items-center ">
+                                        <div class="">
+                                        <p class="mb-2">15:30 AM – 17:30 AM PDT</p>
+                                        <p class="mb-0">Open House</p>
+                                        <p class="fz-14 text-info">Ahtoy Juliana</p>
+                                        </div>
+                                        <div>
+                                            <a href="" class="hover-danger">BOOK</a>
+                                        </div></div>
+                                        <a class="text-danger arrow-2" data-bs-toggle="collapse" href="#collapseExample-2"  role="button" aria-expanded="false" aria-controls="collapseExample">
+                                            View Detials<i class="fa-solid fa-chevron-down ms-3 icon down-2"></i>
+                                            <i class="fa-solid fa-chevron-up icon d-none up-2 ms-3"></i>
+                                        </a>
+                                        <div class="collapse" id="collapseExample-2">
+                                            <div class="card card-body bg-light border-0">
+                                              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="border-bottom py-2 px-3 ">
+                                        <div class="d-flex justify-content-between align-items-center ">
+                                        <div class="">
+                                        <p class="mb-2">18:30 AM – 19:30 AM PDT</p>
+                                        <p class="mb-0">Beg Salsa Partnering</p>
+                                        <p class="fz-14 text-info">Devin Thompson</p>
+                                        </div>
+                                        <div>
+                                            <a href="" class="hover-danger">BOOK</a>
+                                        </div></div>
+                                        <a class="text-danger arrow-3" data-bs-toggle="collapse" href="#collapseExample-3"  role="button" aria-expanded="false" aria-controls="collapseExample">
+                                            View Detials<i class="fa-solid fa-chevron-down ms-3 icon down-3"></i>
+                                            <i class="fa-solid fa-chevron-up icon d-none up-3 ms-3"></i>
+                                        </a>
+                                        <div class="collapse" id="collapseExample-3">
+                                            <div class="card card-body bg-light border-0">
+                                              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="border-bottom py-2 px-3 ">
+                                        <div class="d-flex justify-content-between align-items-center ">
+                                        <div class="">
+                                        <p class="mb-2">19:30 AM – 21:00 AM PDT</p>
+                                        <p class="mb-0">Adv Ballet</p>
+                                        <p class="fz-14 text-info">Kassdy Robles</p>
+                                        </div>
+                                        <div>
+                                            <a href="" class="hover-danger">BOOK</a>
+                                        </div></div>
+                                        <a class="text-danger arrow-4" data-bs-toggle="collapse" href="#collapseExample-4"  role="button" aria-expanded="false" aria-controls="collapseExample">
+                                            View Detials<i class="fa-solid fa-chevron-down ms-3 icon down-4"></i>
+                                            <i class="fa-solid fa-chevron-up icon d-none up-4 ms-3"></i>
+                                        </a>
+                                        <div class="collapse" id="collapseExample-4">
+                                            <div class="card card-body bg-light border-0">
+                                              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                            </div>
+                                          </div>
+                                    </div>
+                                    
+                                </div>
+                                <!--星期三-->
+                                <div class="tab-pane mt-3 mb-3" id="fourteen" role="tabpanel">
+                                    <div class="bg-light py-2 px-3 ">
+                                        <h6 class="mb-0 fz-16" >Wednesday, Septemper 14</h6>
+                                    </div>
+                                    <div class="border-bottom py-2 px-3 ">
+                                        <div class="d-flex justify-content-between align-items-center ">
+                                        <div class="">
+                                        <p class="mb-2">12:30 AM – 14:30 AM PDT</p>
+                                        <p class="mb-0">Inter Movement Fundamentals</p>
+                                        <p class="fz-14 text-info">Layen Finley</p>
+                                        </div>
+                                        <div>
+                                            <a href="" class="hover-danger">BOOK</a>
+                                        </div></div>
+                                        <a class="text-danger arrow" data-bs-toggle="collapse" href="#collapseExample"  role="button" aria-expanded="false" aria-controls="collapseExample">
+                                            View Detials<i class="fa-solid fa-chevron-down ms-3 icon down"></i>
+                                            <i class="fa-solid fa-chevron-up icon d-none up ms-3"></i>
+                                        </a>
+                                        <div class="collapse" id="collapseExample">
+                                            <div class="card card-body bg-light border-0">
+                                              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="border-bottom py-2 px-3 ">
+                                        <div class="d-flex justify-content-between align-items-center ">
+                                        <div class="">
+                                        <p class="mb-2">15:30 AM – 17:30 AM PDT</p>
+                                        <p class="mb-0">Open House</p>
+                                        <p class="fz-14 text-info">Ahtoy Juliana</p>
+                                        </div>
+                                        <div>
+                                            <a href="" class="hover-danger">BOOK</a>
+                                        </div></div>
+                                        <a class="text-danger arrow-2" data-bs-toggle="collapse" href="#collapseExample-2"  role="button" aria-expanded="false" aria-controls="collapseExample">
+                                            View Detials<i class="fa-solid fa-chevron-down ms-3 icon down-2"></i>
+                                            <i class="fa-solid fa-chevron-up icon d-none up-2 ms-3"></i>
+                                        </a>
+                                        <div class="collapse" id="collapseExample-2">
+                                            <div class="card card-body bg-light border-0">
+                                              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                            </div>
+                                          </div>
+                                    </div>
+                                    
+                                </div>
+                                <!--星期四-->
+                                <div class="tab-pane mt-3 mb-3" id="fifteen" role="tabpanel">
+                                    <div class="bg-light py-2 px-3 ">
+                                        <h6 class="mb-0 fz-16" >Thursday, Septemper 15</h6>
+                                    </div>
+                                    <div class="border-bottom py-2 px-3 ">
+                                        <div class="d-flex justify-content-between align-items-center ">
+                                        <div class="">
+                                        <p class="mb-2">12:30 AM – 14:30 AM PDT</p>
+                                        <p class="mb-0">Adv Commercial Choreography Company Class</p>
+                                        <p class="fz-14 text-info">June Pstts</p>
+                                        </div>
+                                        <div>
+                                            <a href="" class="hover-danger">BOOK</a>
+                                        </div></div>
+                                        <a class="text-danger arrow" data-bs-toggle="collapse" href="#collapseExample"  role="button" aria-expanded="false" aria-controls="collapseExample">
+                                            View Detials<i class="fa-solid fa-chevron-down ms-3 icon down"></i>
+                                            <i class="fa-solid fa-chevron-up icon d-none up ms-3"></i>
+                                        </a>
+                                        <div class="collapse" id="collapseExample">
+                                            <div class="card card-body bg-light border-0">
+                                              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="border-bottom py-2 px-3 ">
+                                        <div class="d-flex justify-content-between align-items-center ">
+                                        <div class="">
+                                        <p class="mb-2">15:30 AM – 17:30 AM PDT</p>
+                                        <p class="mb-0">Open House</p>
+                                        <p class="fz-14 text-info">Ahtoy Juliana</p>
+                                        </div>
+                                        <div>
+                                            <a href="" class="hover-danger">BOOK</a>
+                                        </div></div>
+                                        <a class="text-danger arrow-2" data-bs-toggle="collapse" href="#collapseExample-2"  role="button" aria-expanded="false" aria-controls="collapseExample">
+                                            View Detials<i class="fa-solid fa-chevron-down ms-3 icon down-2"></i>
+                                            <i class="fa-solid fa-chevron-up icon d-none up-2 ms-3"></i>
+                                        </a>
+                                        <div class="collapse" id="collapseExample-2">
+                                            <div class="card card-body bg-light border-0">
+                                              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="border-bottom py-2 px-3 ">
+                                        <div class="d-flex justify-content-between align-items-center ">
+                                        <div class="">
+                                        <p class="mb-2">12:30 AM – 14:30 AM PDT</p>
+                                        <p class="mb-0">Inter Contemporary</p>
+                                        <p class="fz-14 text-info">Devin Thompson</p>
+                                        </div>
+                                        <div>
+                                            <a href="" class="hover-danger">BOOK</a>
+                                        </div></div>
+                                        <a class="text-danger arrow-3" data-bs-toggle="collapse" href="#collapseExample-3"  role="button" aria-expanded="false" aria-controls="collapseExample">
+                                            View Detials<i class="fa-solid fa-chevron-down ms-3 icon down-3"></i>
+                                            <i class="fa-solid fa-chevron-up icon d-none up-3 ms-3"></i>
+                                        </a>
+                                        <div class="collapse" id="collapseExample-3">
+                                            <div class="card card-body bg-light border-0">
+                                              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="border-bottom py-2 px-3 ">
+                                        <div class="d-flex justify-content-between align-items-center ">
+                                        <div class="">
+                                        <p class="mb-2">12:30 AM – 14:30 AM PDT</p>
+                                        <p class="mb-0">Adv Choreography</p>
+                                        <p class="fz-14 text-info">Kassidy Robles</p>
+                                        </div>
+                                        <div>
+                                            <a href="" class="hover-danger">BOOK</a>
+                                        </div></div>
+                                        <a class="text-danger arrow-4" data-bs-toggle="collapse" href="#collapseExample-4"  role="button" aria-expanded="false" aria-controls="collapseExample">
+                                            View Detials<i class="fa-solid fa-chevron-down ms-3 icon down-4"></i>
+                                            <i class="fa-solid fa-chevron-up icon d-none up-4 ms-3"></i>
+                                        </a>
+                                        <div class="collapse" id="collapseExample-4">
+                                            <div class="card card-body bg-light border-0">
+                                              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                                <!--星期五-->
+                                <div class="tab-pane mt-3 mb-3" id="sixteen" role="tabpanel">
+                                    <div class="bg-light py-2 px-3 ">
+                                        <h6 class="mb-0 fz-16" >Friday, Septemper 16</h6>
+                                    </div>
+                                    <div class="border-bottom py-2 px-3 ">
+                                        <div class="d-flex justify-content-between align-items-center ">
+                                        <div class="">
+                                        <p class="mb-2">12:30 AM – 14:30 AM PDT</p>
+                                        <p class="mb-0">Open Ballet</p>
+                                        <p class="fz-14 text-info">William Mayo</p>
+                                        </div>
+                                        <div>
+                                            <a href="" class="hover-danger">BOOK</a>
+                                        </div></div>
+                                        <a class="text-danger arrow" data-bs-toggle="collapse" href="#collapseExample"  role="button" aria-expanded="false" aria-controls="collapseExample">
+                                            View Detials<i class="fa-solid fa-chevron-down ms-3 icon down"></i>
+                                            <i class="fa-solid fa-chevron-up icon d-none up ms-3"></i>
+                                        </a>
+                                        <div class="collapse" id="collapseExample">
+                                            <div class="card card-body bg-light border-0">
+                                              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="border-bottom py-2 px-3 ">
+                                        <div class="d-flex justify-content-between align-items-center ">
+                                        <div class="">
+                                        <p class="mb-2">17:30 AM – 19:30 AM PDT</p>
+                                        <p class="mb-0">Adv Contemporary</p>
+                                        <p class="fz-14 text-info">Ahtoy Juliana</p>
+                                        </div>
+                                        <div>
+                                            <a href="" class="hover-danger">BOOK</a>
+                                        </div></div>
+                                        <a class="text-danger arrow-2" data-bs-toggle="collapse" href="#collapseExample-2"  role="button" aria-expanded="false" aria-controls="collapseExample">
+                                            View Detials<i class="fa-solid fa-chevron-down ms-3 icon down-2"></i>
+                                            <i class="fa-solid fa-chevron-up icon d-none up-2 ms-3"></i>
+                                        </a>
+                                        <div class="collapse" id="collapseExample-2">
+                                            <div class="card card-body bg-light border-0">
+                                              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                                <!--星期六-->
+                                <div class="tab-pane mt-3 mb-3" id="seleventeen" role="tabpanel">
+                                    <div class="bg-light py-2 px-3 ">
+                                        <h6 class="mb-0 fz-16" >Sunday, Septemper 17</h6>
+                                    </div>
+                                    <div class="border-bottom py-2 px-3 ">
+                                        <div class="d-flex justify-content-between align-items-center ">
+                                        <div class="">
+                                        <p class="mb-2">9:30 AM – 11:00 AM PDT</p>
+                                        <p class="mb-0">Inter Ballet</p>
+                                        <p class="fz-14 text-info">Clark Park</p>
+                                        </div>
+                                        <div>
+                                            <a href="" class="hover-danger">BOOK</a>
+                                        </div></div>
+                                        <a class="text-danger arrow" data-bs-toggle="collapse" href="#collapseExample"  role="button" aria-expanded="false" aria-controls="collapseExample">
+                                            View Detials<i class="fa-solid fa-chevron-down ms-3 icon down"></i>
+                                            <i class="fa-solid fa-chevron-up icon d-none up ms-3"></i>
+                                        </a>
+                                        <div class="collapse" id="collapseExample">
+                                            <div class="card card-body bg-light border-0">
+                                              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="border-bottom py-2 px-3 ">
+                                        <div class="d-flex justify-content-between align-items-center ">
+                                        <div class="">
+                                        <p class="mb-2">15:30 AM – 17:30 AM PDT</p>
+                                        <p class="mb-0">Open House</p>
+                                        <p class="fz-14 text-info">Ahtoy Juliana</p>
+                                        </div>
+                                        <div>
+                                            <a href="" class="hover-danger">BOOK</a>
+                                        </div></div>
+                                        <a class="text-danger arrow-2" data-bs-toggle="collapse" href="#collapseExample-2"  role="button" aria-expanded="false" aria-controls="collapseExample">
+                                            View Detials<i class="fa-solid fa-chevron-down ms-3 icon down-2"></i>
+                                            <i class="fa-solid fa-chevron-up icon d-none up-2 ms-3"></i>
+                                        </a>
+                                        <div class="collapse" id="collapseExample-2">
+                                            <div class="card card-body bg-light border-0">
+                                              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="border-bottom py-2 px-3 ">
+                                        <div class="d-flex justify-content-between align-items-center ">
+                                        <div class="">
+                                        <p class="mb-2">16:30 AM – 18:00 AM PDT</p>
+                                        <p class="mb-0">Inter Contemporary</p>
+                                        <p class="fz-14 text-info">Devin Thompson</p>
+                                        </div>
+                                        <div>
+                                            <a href="" class="hover-danger">BOOK</a>
+                                        </div></div>
+                                        <a class="text-danger arrow-3" data-bs-toggle="collapse" href="#collapseExample-3"  role="button" aria-expanded="false" aria-controls="collapseExample">
+                                            View Detials<i class="fa-solid fa-chevron-down ms-3 icon down-3"></i>
+                                            <i class="fa-solid fa-chevron-up icon d-none up-3 ms-3"></i>
+                                        </a>
+                                        <div class="collapse" id="collapseExample-3">
+                                            <div class="card card-body bg-light border-0">
+                                              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="border-bottom py-2 px-3 ">
+                                        <div class="d-flex justify-content-between align-items-center ">
+                                        <div class="">
+                                        <p class="mb-2">19:00 AM – 21:30 AM PDT</p>
+                                        <p class="mb-0">	Open Stretch</p>
+                                        <p class="fz-14 text-info">Kassidy Robles</p>
+                                        </div>
+                                        <div>
+                                            <a href="" class="hover-danger">BOOK</a>
+                                        </div></div>
+                                        <a class="text-danger arrow-4" data-bs-toggle="collapse" href="#collapseExample-4"  role="button" aria-expanded="false" aria-controls="collapseExample">
+                                            View Detials<i class="fa-solid fa-chevron-down ms-3 icon down-4"></i>
+                                            <i class="fa-solid fa-chevron-up icon d-none up-4 ms-3"></i>
+                                        </a>
+                                        <div class="collapse" id="collapseExample-4">
+                                            <div class="card card-body bg-light border-0">
+                                              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane mt-3 mb-3" id="eighteen" role="tabpanel">18</div>
+                                <div class="tab-pane mt-3 mb-3" id="nineteen" role="tabpanel">19</div>
+                                <div class="tab-pane" id="twenty" role="tabpanel">20</div>
+                                <div class="tab-pane" id="twentyone" role="tabpanel">21</div>
+                                <div class="tab-pane" id="twentytwo" role="tabpanel">22</div>
+                                <div class="tab-pane" id="twentythree" role="tabpanel">23</div>
+                                <div class="tab-pane" id="twentyfour" role="tabpanel">24</div>
+                              </div>
+                        </div>
+                      </div>
+                     <div class="col-2 d-none d-lg-block mt-4">
+                <img src="https://images.unsplash.com/photo-1590803296627-e9ed27c410a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzd8fGRhbmNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"  class=" object-fit-cover" style="height: 100vh;" alt="">
+            </div> 
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+<script>
+    var firstTabEl = document.querySelector('#myTab a:last-child')
+    var firstTab = new bootstrap.Tab(firstTabEl)
+  
+    firstTab.show()
+  </script>
+  <!--<a class="list-group-item list-group-item-action text-center border-0 rounded-pill " data-bs-toggle="list" href="#eighteen" role="tab">18</a>
+                                <a class="list-group-item list-group-item-action text-center border-0 rounded-pill d-block" data-bs-toggle="list" href="#nineteen" role="tab">19</a>
+                                <a class="list-group-item list-group-item-action text-center border-0 rounded-pill" data-bs-toggle="list" href="#twenty" role="tab">20</a>
+                                <a class="list-group-item list-group-item-action text-center border-0 rounded-pill" data-bs-toggle="list" href="#twentyone" role="tab">21</a>
+                                <a class="list-group-item list-group-item-action text-center border-0 rounded-pill" data-bs-toggle="list" href="#twentytwo" role="tab">22</a>
+                                <a class="list-group-item list-group-item-action text-center border-0 rounded-pill" data-bs-toggle="list" href="#twentythree" role="tab">23</a>
+                                <a class="list-group-item list-group-item-action text-center border-0 rounded-pill" data-bs-toggle="list" href="#twentyfour" role="tab">24</a>-->
+    <footer class="bg-primary py-5">
+      <div class="container text-center">
+        <div class="text-light flex-column ">
+          <h3 class="mb-3">Contact Us</h3>
+          <div class="d-flex justify-content-center mb-3">
+            <i class="fa-brands fa-facebook fa-xl navbar-link mb-2 mt-3"></i>
+            <i class="fa-brands fa-instagram fa-xl navbar-link mb-2 mt-3 ms-3 me-3"></i>
+            <i class="fa-brands fa-whatsapp fa-xl navbar-link mb-2 mt-3"></i>
+          </div>
+          <p>Taiwan Dance Company: TDCompany@gmail.com</p>
+          <p class="mb-0">© TDC Dance Company .EST.2022</p>
+          
+        </div>
+        
+
+      </div>
+    </footer>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
