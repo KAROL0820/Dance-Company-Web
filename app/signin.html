@@ -18,7 +18,7 @@ current: signin
         <div class="col-md-8 col-lg-6">
         <div class=" text-primary fw-bold text-center  py-3 fz-20 fz-md-24 fz-lg-32">Creat Your Account</div>
         <div class="form-box d-flex flex-column">
-            <form class="pb-5 ">
+            <form class="pb-0 ">
                 <div class="mb-3">
                     <label for="text" class="form-label">Account Name</label>
                     <div class="input-group">
@@ -44,35 +44,32 @@ current: signin
                     <label class="form-check-label text-dark ms-3" for="exampleCheck1">I agree to provide the above personal information for contact use only. Your personal information will be safeguarded against misuse.</label>
 
                 </div>
-                <div class="d-flex justify-content-center">
-                    <a class="btn dark-btn text-center text-light fs-5"
-                        data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Sign up
-                    </a></div>
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title fs-3" id="exampleModalLabel">Sign up</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="fs-5">Register your account has been approved !
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <a href="login.html" class="btn btn-primary text-light">Return to login page</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-flex flex-column align-items-center pt-5"><small
-                        class="text-info pb-2">Already have account ? <a href="./login.html " class="text-decoration-underline">Login</a>  from here !</small></div>
 
             </form>
         </div>
 </div>    </div>
     
 </section>
+<!-- Button trigger modal -->
+
+  <div class="text-center"> <a href=""  data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn dark-btn px-4 rounded-2">SIGN UP</a></div>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Sign up</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            Register your account has been approved !<i class="fa-solid fa-circle-check text-success ms-3"></i>
+        </div>
+        <div class="modal-footer">
+          <a href="./login.html" class="btn byn-outline-primary px-4">Return to login page</a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="d-flex flex-column align-items-center pt-2 mb-6"><small
+    class="text-info pb-2">Already have account ? <a href="./login.html " class="text-decoration-underline">Login</a>  from here !</small></div>

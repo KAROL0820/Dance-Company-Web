@@ -108,18 +108,7 @@
 .myaccount-back{
     background-color: $primary;
     height: 80px;
-    @include pad {
-        height: 100px;
-    }
-    @include desk{
-        height: 150px;
-    }
-    @include lg-desk{
-        height: 200px;
-    }
-    @include big{
-        height: 230px;
-    }
+    
 }
 .h-border{
     border-bottom: 1px solid transparent;
