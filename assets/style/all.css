@@ -15977,30 +15977,6 @@ img {
   height: 80px;
 }
 
-@media (min-width: 768px) {
-  .myaccount-back {
-    height: 100px;
-  }
-}
-
-@media (min-width: 992px) {
-  .myaccount-back {
-    height: 150px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .myaccount-back {
-    height: 200px;
-  }
-}
-
-@media (min-width: 1400px) {
-  .myaccount-back {
-    height: 230px;
-  }
-}
-
 .h-border {
   border-bottom: 1px solid transparent;
 }
