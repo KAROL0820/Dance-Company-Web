@@ -8,6 +8,11 @@
     background-position: center center;
     background-repeat: no-repeat;
 }
+.bg-bottom{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
 .object-fit-cover{
     object-fit: cover;
 }
@@ -58,7 +63,17 @@
 .rounded-4{
     border-radius: 8px;
 }
+.rounded-25{
+  border-radius: 50%;
+}
 //
+.border-change{
+    
+    
+    @include pad{
+      border-left: 1px solid $primary;
+    }
+}
 .circle-pic-lg{
     width: 140px;
     height: 140px;
@@ -104,6 +119,11 @@
     width:60px ;
     height: 3px;
     background-color: $danger;
+}
+.primary-line{
+  width: 2px;
+  height:500px;
+  background-color: $primary;
 }
 
 $utilities: map-merge(

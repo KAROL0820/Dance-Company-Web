@@ -1,3 +1,4 @@
+//
 .home-back{
     background-image: url("https://images.unsplash.com/photo-1516737488405-7b6d6868fad3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
     
@@ -5,12 +6,25 @@
         height: 1080px;
     }
 }
-.youth-pic{
-    
-}
 .about-back{
     background-image: url("https://images.unsplash.com/photo-1483931430372-226f194be3a5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
     height: 250px;
+}
+.schedule-back{
+    background-image: url("https://images.unsplash.com/photo-1560088319-5fc5c1135bef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1196&q=80");
+    height: 80px;
+    @include pad {
+        height: 100px;
+    }
+    @include desk{
+        height: 150px;
+    }
+    @include lg-desk{
+        height: 200px;
+    }
+    @include big{
+        height: 230px;
+    }
 }
 .what-on-back{
     background-image: url("https://images.unsplash.com/photo-1508807526345-15e9b5f4eaff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1110&q=80");
@@ -57,6 +71,54 @@
     }
     @include big{
         height: 789px;
+    }
+}
+.login-back{
+    background-image: url("https://images.unsplash.com/photo-1550026593-dd8ce0749590?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    height: 80px;
+    @include pad {
+        height: 100px;
+    }
+    @include desk{
+        height: 150px;
+    }
+    @include lg-desk{
+        height: 200px;
+    }
+    @include big{
+        height: 230px;
+    }
+}
+.signin-back{
+    background-image: url("https://images.unsplash.com/photo-1632269418000-170089ca0062?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80");
+    height: 80px;
+    @include pad {
+        height: 100px;
+    }
+    @include desk{
+        height: 150px;
+    }
+    @include lg-desk{
+        height: 200px;
+    }
+    @include big{
+        height: 230px;
+    }
+}
+.myaccount-back{
+    background-color: $primary;
+    height: 80px;
+    @include pad {
+        height: 100px;
+    }
+    @include desk{
+        height: 150px;
+    }
+    @include lg-desk{
+        height: 200px;
+    }
+    @include big{
+        height: 230px;
     }
 }
 .h-border{

@@ -24,6 +24,9 @@
         
     }
 }
+.hover-danger:hover{
+    color: $danger;
+}
 .manu-link{
     display: block;
     font-size: 20px;
@@ -37,4 +40,11 @@
 //nav
 .bg-zero{
     background-color:rgba(0, 0, 0, 0);
+}
+.hover-danger:hover{
+    color: $danger;
+}
+.hover-bg-info:hover{
+    background-color: #8792a13f;
+    transition: 0.5s;
 }
